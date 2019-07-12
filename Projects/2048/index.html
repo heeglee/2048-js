@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        * {
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 24px;
+            margin: 0 auto;
+        }
+
+        p {
+            text-align: center;
+            font-size: 2rem;
+            margin: 20px;
+        }
+
+        #wrapper {
+            margin: 0 auto;
+            text-align: center;
+        }
+
+        #gametable {
+            margin: 15px auto;
+        }
+
+        td {
+            width: 100px;
+            height: 100px;
+            background-color: navajowhite;
+            border-radius: 10px;
+            text-align: center;
+        }
+
+        tr:nth-of-type(2n-1) > td:nth-of-type(2n-1) {
+            background-color: lightblue;
+        }
+
+        tr:nth-of-type(2n) > td:nth-of-type(2n) {
+            background-color: lightblue
+        }
+    </style>
+</head>
+
+<body>
+    <div id="wrapper">
+        <p>2048</p>
+        <div>Your score: <span id="score">0</span></div>
+        <table id="gametable">
+            <tr class="r1">
+                <td class="r1 c1"></td>
+                <td class="r1 c2"></td>
+                <td class="r1 c3"></td>
+                <td class="r1 c4"></td>
+            </tr>
+            <tr class="r2">
+                <td class="r2 c1"></td>
+                <td class="r2 c2"></td>
+                <td class="r2 c3"></td>
+                <td class="r2 c4"></td>
+            </tr>
+            <tr class="r3">
+                <td class="r3 c1"></td>
+                <td class="r3 c2"></td>
+                <td class="r3 c3"></td>
+                <td class="r3 c4"></td>
+            </tr>
+            <tr class="r4">
+                <td class="r4 c1"></td>
+                <td class="r4 c2"></td>
+                <td class="r4 c3"></td>
+                <td class="r4 c4"></td>
+            </tr>
+        </table>
+        <button id="reset">RESET</button>
+    </div>
+    <script src="./2048.js"></script>
+</body>
+
+</html>
